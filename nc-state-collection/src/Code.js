@@ -18,9 +18,6 @@ var displayErrorType = e.values[5];
 var displayErrorDetails = e.values[6];
 var displayErrorImage = e.values[7];
 
-//Ready to Be Included in NC State Websites Collection?
-var notes = e.values[11];
-
 //Quantitative Analysis
 var queued = e.values[8];
 var queuedHost = e.values[9];
@@ -51,7 +48,7 @@ else {readyToInclude = "No";
 }
 
 //Add Message for Quantitative
-var quanMetrics
+var quanMetrics;
 if (queued >= 1000) {
   quanMetrics = "High Queue Alert!" + "\n\n" + "Host for Queued URLS: " + queuedHost + "\n\n" + "Crawl Report Link: " + crawlReportLink;
 }
