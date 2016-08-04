@@ -1,8 +1,8 @@
 function formSubmitReply(e) {
 var sheet = SpreadsheetApp.getActiveSheet();
 var row =  SpreadsheetApp.getActiveSheet().getLastRow();
-
-var sendToEmail = "toddstoffer+yni2egtzxne3dez4hcsp@boards.trello.com, tdstoffe@ncsu.edu";
+// If not using external email config file, the sendToEmail variable needs to be set
+// var sendToEmail = "example@boards.trello.com";
 var issueNumber = row;
 
 //Overview information to be included in every ticket
