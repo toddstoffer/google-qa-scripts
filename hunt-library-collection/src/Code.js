@@ -1,8 +1,6 @@
 function formSubmitReply(e) {
 var sheet = SpreadsheetApp.getActiveSheet();
 var row =  SpreadsheetApp.getActiveSheet().getLastRow();
-
-var sendToEmail = "toddstoffer+kbdle7zlafh6usip2qer@boards.trello.com, tdstoffe@ncsu.edu";
 var issueNumber = row;
 
 //Overview information to be included in every ticket
