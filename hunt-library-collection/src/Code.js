@@ -3,6 +3,8 @@ var sheet = SpreadsheetApp.getActiveSheet();
 var row =  SpreadsheetApp.getActiveSheet().getLastRow();
 var issueNumber = row;
 
+// If not using external config file you must set a sendToEmail variable that is set to the email address of your Trello board
+// var sendToEmail = "example@boards.trello.com"
 //Overview information to be included in every ticket
 var seed = e.values[2];
 var wayback = "https://wayback.archive-it.org/7087/*/"+ e.values[2];
