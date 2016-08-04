@@ -4,12 +4,9 @@ This repository is used to host the .gs files used in the Web Archiving QA proce
 
 
 ### Project Overview
-These scripts are part of the QA workflow. In order to be able to manage the writing and versioning of the script outside of Google Drive they are managed using node-google-apps-script. The individual .gs files are referenced inside of separate Google Sheets that are used to hold the information submitted via Google Forms.
+These scripts are part of the QA workflow. In order to be able to manage the writing and versioning of the script outside of Google Drive they are managed using [node-google-apps-script](https://www.npmjs.com/package/node-google-apps-script). The individual files are referenced inside of separate Google Sheets that are used to hold the information submitted via Google Forms.
 
-The Google Sheets used in the QA process reference these files from within the individual sheets for each collection. Within the Google Sheet for each collection there is a script in the script editor pointing out to these separately managed files.
-
-While this workflow is less straight forward than managing these scripts from directly within Google Sheets it allows for version control and greater flexibility in implementation.
-
+Within the Google Sheet that is collecting form responses for each collection for each collection the script editor imports these external files as a library, and the script from within the Google Sheet scripts editor that is collecting responses then references these external scripts. While this workflow is less straight forward than managing these scripts from directly within Google Sheets it allows for version control and greater flexibility in implementation.
 
 ### To Install A Locally Managed Script Into a Google Sheet
   1) Create a new project by visiting [script.google.com](https://script.google.com)
@@ -57,5 +54,3 @@ While this workflow is less straight forward than managing these scripts from di
   6) Click on Resources>Libraries
 
   7) From the dropdown menu select the latest version number and click ok
-
-  
